@@ -19,3 +19,11 @@ This project connects to a MongoDB database we have pre-configured for the chall
 # Swagger
 
 This Microservice has Swagger UI integrated in it, so you can test the REST endpoints. To get to it put the following in a web browser: [http://localhost:8080/swagger-ui](http://localhost:8080/swagger-ui)
+
+# Running the application
+
+This is a standard SpringBoot application, you can run it by executing the following command from the project root directory:
+
+```
+./mvnw spring-boot:run
+```
