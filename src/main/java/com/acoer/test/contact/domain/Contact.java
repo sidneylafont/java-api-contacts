@@ -2,7 +2,7 @@ package com.acoer.test.contact.domain;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collation = "contacts")
+@Document(collection = "contacts")
 public class Contact {
 
 	/**
