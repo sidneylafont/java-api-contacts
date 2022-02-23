@@ -1,4 +1,4 @@
-#Structure
+# Structure
 
 The project has a simple Java project structure with the following packages (in **src/main/java**)
 
