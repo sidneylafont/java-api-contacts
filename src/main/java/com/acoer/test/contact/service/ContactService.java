@@ -23,32 +23,33 @@ public class ContactService implements ICrudOperations<Contact> {
 
 	@Override
 	public List<Contact> getAll() {
-		// TODO Add the implementation code
-		return null;
+		logger.debug("getAll method called");
+		return mongoOps.findAll(null);
 	}
 
 	@Override
 	public List<Contact> search(String searchTerm) {
-		// TODO Add the implementation code
-		return null;
+		logger.debug("searching by term");
+		return mongoOps.findById(null,null, searchTerm);
 	}
 
 	@Override
 	public Contact add(Contact item) {
-		// TODO Add the implementation code
-		return null;
+		logger.debug("saving item");
+		return mongoOps.save(item);
 	}
 
 	@Override
-	public Contact update(Contact item) {
-		// TODO Add the implementation code
-		return null;
+	public Contact update(Contact oldContact, Contact updatedContact) {
+		logger.debug("updating item");
+		mongoOps.remove(oldContact);
+		return mongoOps.save(updatedContact);
 	}
 
 	@Override
 	public void delete(Contact item) {
-		// TODO Add the implementation code
-
+		logger.debug("deleting item");
+		mongoOps.remove(item);
 	}
 
 }

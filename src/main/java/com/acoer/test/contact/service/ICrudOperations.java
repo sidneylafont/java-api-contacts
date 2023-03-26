@@ -30,10 +30,11 @@ public interface ICrudOperations<T> {
 	/**
 	 * Updates an existing item to the DB
 	 * 
-	 * @param item
+	 * @param oldContact
+	 * @param updatedContact
 	 * @return
 	 */
-	public T update(T item);
+	public T update(T oldContact, T updatedContact);
 
 	/**
 	 * Removes an item from the DB
